@@ -20,14 +20,14 @@
   "babel": {
     "presets": [
       [
-        "env",
+        "@babel/preset-env",
         {
           "targets": {
             "browsers": [
               "> 1%"
             ]
           },
-          "useBuiltIns": true
+          "useBuiltIns": "entry"
         }
       ]
     ],
@@ -44,16 +44,17 @@
   "author": "Amin Marashi <marashisamin at gmail>",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.24.5",
     "@babel/core": "^7.24.5",
     "@babel/preset-env": "^7.24.5",
-    "@babel/traverse": "^7.23.2",
+    "@babel/traverse": "^7.24.5",
     "babel-eslint": "^10.1.0",
     "babel-jest": "^29.7.0",
-    "babel-loader": "^7.1.2",
+    "babel-loader": "^8.0.0",
     "babel-minify-webpack-plugin": "^0.2.0",
     "babel-plugin-loop-optimizer": "^1.4.1",
     "base64-js": "^1.2.1",
-    "eslint": "^4.18.2",
+    "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^11.3.2",
     "eslint-config-binary": "^1.0.2",
     "eslint-config-prettier": "^2.3.0",
@@ -66,7 +67,11 @@
   },
   "dependencies": {
     "@binary-com/binary-document-uploader": "^2.4.8",
-    "core-js": "^3.37.0",
-    "md5": "^2.2.1"
+    "ansi-regex": "^5.0.1",
+    "core-js": "^3.37.1",
+    "json5": "^1.0.2",
+    "loader-utils": "^1.4.1",
+    "md5": "^2.2.1",
+    "minimist": "^1.2.6"
   }
 }
